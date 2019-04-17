@@ -1,0 +1,7 @@
+cd /root/workspace/
+wget https://github.com/torognes/vsearch/releases/download/v2.12.0/vsearch-2.12.0-linux-x86_64.tar.gz
+mkdir -p /share/apps/VSEARCH
+cd /share/apps/VSEARCH/
+tar zxf /root/workspace/vsearch-2.12.0-linux-x86_64.tar.gz
+chown -R root:root vsearch-2.12.0-linux-x86_64/
+

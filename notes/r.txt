@@ -1,0 +1,9 @@
+cd /root/workspace/
+wget https://cran.r-project.org/src/base/R-3/R-3.5.3.tar.gz
+tar zxf R-3.5.3.tar.gz
+cd R-3.5.3/
+JAVA_HOME=/share/apps/Java/zulu8.36.0.1-ca-jdk8.0.202-linux_x64/
+mkdir -p /share/apps/R
+./configure --prefix=/share/apps/R/R-3.5.3
+make
+make install

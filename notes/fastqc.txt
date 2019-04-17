@@ -1,0 +1,5 @@
+cd /root/workspace/
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.8.zip
+mkdir -p /share/apps/FastQC
+cd /share/apps/FastQC
+unzip /root/workspace/fastqc_v0.11.8.zip

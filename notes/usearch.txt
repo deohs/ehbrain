@@ -1,0 +1,5 @@
+cd /root/workspace
+wget https://drive5.com/cgi-bin/upload3.py?license=2019XXXXX
+mkdir -p /share/apps/USEARCH/USEARCH-5.2.32
+mv upload3.py\?license\=2019XXXXX /share/apps/USEARCH/USEARCH-5.2.32/usearch
+chmod 755 /share/apps/USEARCH/USEARCH-5.2.32/usearch

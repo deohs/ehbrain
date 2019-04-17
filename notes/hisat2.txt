@@ -1,0 +1,6 @@
+cd /root/workspace/
+wget http://ccb.jhu.edu/software/hisat2/dl/hisat2-2.1.0-Linux_x86_64.zip
+mkdir /share/apps/HISAT2
+cd /share/apps/HISAT2/
+unzip /root/workspace/hisat2-2.1.0-Linux_x86_64.zip
+

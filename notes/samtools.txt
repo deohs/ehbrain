@@ -1,0 +1,8 @@
+cd /root/workspace/
+wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
+tar jxf samtools-1.9.tar.bz2
+cd samtools-1.9/
+mkdir -p /share/apps/SAMtools
+./configure --prefix=/share/apps/SAMtools/samtools-1.9
+make
+make install

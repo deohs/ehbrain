@@ -1,0 +1,8 @@
+cd /root/workspace/
+wget http://ftp.gnu.org/gnu/parallel/parallel-20190322.tar.bz2
+tar jxf /root/workspace/parallel-20190322.tar.bz2
+cd parallel-20190322/
+mkdir -p /share/apps/GNU_Parallel
+./configure --prefix=/share/apps/GNU_Parallel/parallel-20190322
+make
+make install

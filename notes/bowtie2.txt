@@ -1,0 +1,6 @@
+cd /root/workspace/
+wget 'https://svwh.dl.sourceforge.net/project/bowtie-bio/bowtie2/2.3.5/bowtie2-2.3.5-linux-x86_64.zip'
+mkdir -p /share/apps/Bowtie2
+cd /share/apps/Bowtie2/
+unzip /root/workspace/bowtie2-2.3.5-linux-x86_64.zip
+

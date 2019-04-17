@@ -1,0 +1,7 @@
+cd /root/workspace/
+wget http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.19.zip
+mkdir -p /share/apps/IGV/
+cd /share/apps/IGV
+unzip /root/workspace/IGV_2.4.19.zip
+cd IGV_2.4.19/
+chmod 755 igv.*

@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# hisat2-2.1.0 
+#
+prepend-path 		PATH 		/share/apps/HISAT2/hisat2-2.1.0

@@ -1,0 +1,7 @@
+#%Module 1.0
+#
+# JDK-8.0.202 
+#
+prepend-path 		PATH 		/share/apps/Java/zulu8.36.0.1-ca-jdk8.0.202-linux_x64/bin
+prepend-path		MANPATH		/share/apps/Java/zulu8.36.0.1-ca-jdk8.0.202-linux_x64/share/man/
+setenv			JAVA_HOME	/share/apps/Java/zulu8.36.0.1-ca-jdk8.0.202-linux_x64/

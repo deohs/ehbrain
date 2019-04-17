@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# UCLUST-1.2.21q
+#
+prepend-path 		PATH 		/share/apps/UCLUST/UCLUST-1.2.21q

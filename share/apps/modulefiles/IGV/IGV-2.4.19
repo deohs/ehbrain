@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# IGV-2.4.19
+#
+prepend-path 		PATH 		/share/apps/IGV/IGV_2.4.19

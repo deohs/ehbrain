@@ -1,0 +1,6 @@
+#%Module 1.0
+#
+# Parallel-20190322 
+#
+prepend-path 		PATH 		/share/apps/GNU_Parallel/parallel-20190322/bin
+prepend-path		MANPATH		/share/apps/GNU_Parallel/parallel-20190322/share/man/

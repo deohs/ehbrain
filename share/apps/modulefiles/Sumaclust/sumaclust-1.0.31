@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# sumaclust-1.0.31
+#
+prepend-path 		PATH 		/share/apps/Sumaclust/sumaclust-1.0.31/bin

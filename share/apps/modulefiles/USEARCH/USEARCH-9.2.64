@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# USEARCH-9.2.64
+#
+prepend-path 		PATH 		/share/apps/USEARCH/USEARCH-9.2.64

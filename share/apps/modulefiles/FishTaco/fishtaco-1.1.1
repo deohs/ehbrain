@@ -1,0 +1,19 @@
+#%Module 1.0
+#
+# fishtaco-1.1.1 
+#
+proc ModulesHelp { } {
+    puts stderr "\tActivate Anaconda or Miniconda before using FishTaco"
+    puts stderr ""
+    puts stderr "\t\tmodule load Anaconda/Miniconda3-4.5.12"
+    puts stderr ""
+    puts stderr "\tActivate the FishTaco conda environment with:"
+    puts stderr ""
+    puts stderr "\t\tconda activate /share/apps/FishTaco/fishtaco-1.1.1"
+    puts stderr ""
+    puts stderr "\tDeactivate FishTaco before using other Python environments:"
+    puts stderr "\t\tdeactivate"
+    puts stderr "\t\tmodule unload FishTaco/fishtaco-1.1.1"
+}
+
+ModulesHelp

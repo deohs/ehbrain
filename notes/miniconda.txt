@@ -1,0 +1,6 @@
+mkdir -p /share/apps/Anaconda
+cd /root/workspace/
+wget https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
+sh Miniconda3-4.5.12-Linux-x86_64.sh
+
+When prompted, install /share/apps/Anaconda/Miniconda3-4.5.12

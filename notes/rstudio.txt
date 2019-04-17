@@ -1,0 +1,6 @@
+cd /root/workspace
+wget https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_64-fedora.tar.gz
+mkdir -p /share/apps/R
+cd /share/apps/R
+tar zxf /root/workspace/rstudio-1.2.1335-x86_64-fedora.tar.gz
+chown -R root:root rstudio-1.2.1335/

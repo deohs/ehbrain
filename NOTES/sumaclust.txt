@@ -1,0 +1,5 @@
+mkdir -p /share/apps/Sumaclust
+/share/apps/Anaconda/Miniconda3-4.5.12/bin/conda create --prefix /share/apps/Sumaclust/sumaclust-1.0.31
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/activate /share/apps/Sumaclust/sumaclust-1.0.31
+conda install -c bioconda sumaclust
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/deactivate

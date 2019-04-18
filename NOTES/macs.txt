@@ -1,0 +1,5 @@
+mkdir -p /share/apps/MACS
+/share/apps/Anaconda/Miniconda3-4.5.12/bin/conda create --prefix=/share/apps/MACS/macs2-2.1.2
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/activate /share/apps/MACS/macs2-2.1.2
+conda install -c bioconda macs2
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/deactivate

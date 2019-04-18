@@ -1,0 +1,8 @@
+cd /root/workspace/
+wget https://www.cpan.org/src/5.0/perl-5.28.1.tar.gz
+tar zxf perl-5.28.1.tar.gz
+cd perl-5.28.1/
+mkdir -p /share/apps/Perl
+./configure.gnu --prefix=/share/apps/Perl/perl-5.28.1
+make
+make install

@@ -1,0 +1,5 @@
+mkdir -p /share/apps/UCLUST/UCLUST-1.2.21q
+cd /share/apps/UCLUST/UCLUST-1.2.21q
+wget http://www.drive5.com/uclust/uclustq1.2.21_i86linux64
+chmod 755 uclustq1.2.21_i86linux64
+ln -s uclustq1.2.21_i86linux64 uclust

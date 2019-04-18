@@ -1,0 +1,6 @@
+mkdir -p /share/apps/FishTaco
+/share/apps/Anaconda/Miniconda3-4.5.12/bin/conda create --prefix /share/apps/FishTaco/fishtaco-1.1.1
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/activate /share/apps/FishTaco/fishtaco-1.1.1
+conda install scikit-learn=0.18.2=np113py36_0
+conda install -c bioconda fishtaco
+source /share/apps/Anaconda/Miniconda3-4.5.12/bin/deactivate

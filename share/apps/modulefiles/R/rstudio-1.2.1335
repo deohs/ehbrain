@@ -2,4 +2,5 @@
 #
 # rstudio-1.2.1335 
 #
-prepend-path 		PATH 		/share/apps/R/rstudio-1.2.1335/bin
+setenv			QT_QUICK_BACKEND	software
+prepend-path 		PATH 			/share/apps/R/rstudio-1.2.1335/bin

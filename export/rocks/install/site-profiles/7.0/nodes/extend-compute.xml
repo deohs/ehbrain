@@ -41,6 +41,8 @@
 <package>gstreamer</package>
 <package>gstreamer-plugins-base</package>
 <package>xkeyboard-config</package>
+<package>libxkbcommon</package>
+<package>libxkbcommon-x11</package>
 <package>mesa-dri-drivers</package>
 
 

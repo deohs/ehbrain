@@ -2,5 +2,12 @@
 #
 # R-3.5.3 
 #
+
+conflict Java/*
+conflict MKL/*
+
+module load Java/JDK-8.0.202
+module load MKL/mkl-2019.3
+
 prepend-path 		PATH 		/share/apps/R/R-3.5.3/bin
 prepend-path		MANPATH		/share/apps/R/R-3.5.3/share/man/

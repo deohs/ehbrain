@@ -1,7 +1,0 @@
-cd /root/workspace/
-wget https://superb-dca2.dl.sourceforge.net/project/openblas/v0.3.5/OpenBLAS%200.3.5%20version.zip
-unzip OpenBLAS\ 0.3.5\ version.zip
-cd xianyi-OpenBLAS-eebc189/
-make TARGET=HASWELL
-mkdir -p /share/apps/BLAS/
-make install PREFIX=/share/apps/BLAS/OpenBLAS-0.3.5

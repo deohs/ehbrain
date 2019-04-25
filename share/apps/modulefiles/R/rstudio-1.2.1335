@@ -2,5 +2,10 @@
 #
 # rstudio-1.2.1335 
 #
+
+conflict texlive/*
+
+module load texlive/texlive-2018
+
 setenv			QT_QUICK_BACKEND	software
 prepend-path 		PATH 			/share/apps/R/rstudio-1.2.1335/bin

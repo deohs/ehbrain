@@ -4,4 +4,4 @@ tar zxf l_mkl_2019.3.199.tgz
 cd l_mkl_2019.3.199/
 ./install.sh --SHARED_INSTALL
 
-During install, choose Customize. Accept the architecture. Then, set a custom install root to: /shared/apps/Intel/mkl-2019.3
+During install, choose Customize. Accept the architecture. Then, set a custom install root to: /share/apps/MKL/mkl-2019.3

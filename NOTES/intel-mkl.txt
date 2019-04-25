@@ -1,0 +1,7 @@
+cd /root/workspace/
+wget http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/15275/l_mkl_2019.3.199.tgz
+tar zxf l_mkl_2019.3.199.tgz
+cd l_mkl_2019.3.199/
+./install.sh --SHARED_INSTALL
+
+During install, choose Customize. Accept the architecture. Then, set a custom install root to: /shared/apps/Intel/mkl-2019.3

@@ -1,0 +1,7 @@
+cd /root/workspace/
+wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+tar zxf install-tl-unx.tar.gz
+cd install-tl-20190227/
+mkdir -p /share/apps/texlive
+
+During install, set the installation path to /share/apps/texlive/2018

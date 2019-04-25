@@ -1,0 +1,6 @@
+cd /root/workspace/
+wget https://ftp.gnu.org/gnu/gcc/gcc-8.3.0/gcc-8.3.0.tar.gz
+tar zxf gcc-8.3.0.tar.gz
+cd gcc-8.3.0/
+mkdir -p /share/apps/GCC
+./configure --prefix=/share/apps/GCC/gcc-8.3.0 --disable-multilib

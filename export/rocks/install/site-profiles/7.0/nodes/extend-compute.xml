@@ -78,6 +78,11 @@ vm.dirty_bytes = 4294967296
 vm.dirty_background_bytes = 2147483648
 </file>
 
+<file name="/etc/security/limits.conf" mode="append">
+* soft nofile 8192
+* hard nofile 8192
+</file>
+
 <file name="/usr/share/Modules/init/.modulespath" mode="append">
 /share/apps/modulefiles
 </file>

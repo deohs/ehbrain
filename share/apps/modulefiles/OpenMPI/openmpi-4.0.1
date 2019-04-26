@@ -1,0 +1,14 @@
+#%Module 1.0
+#
+# openmpi-4.0.1 
+#
+
+conflict mpi/*
+conflict rocks-openmpi
+conflict rocks-openmpi_ib
+conflict OpenMPI/*
+
+setenv			MPI_HOME		/share/apps/OpenMPI/openmpi-4.0.1
+prepend-path 		PATH	 		/share/apps/OpenMPI/openmpi-4.0.1/bin
+prepend-path 		LD_LIBRARY_PATH 	/share/apps/OpenMPI/openmpi-4.0.1/lib
+prepend-path		MANPATH			/share/apps/OpenMPI/openmpi-4.0.1/share/man/

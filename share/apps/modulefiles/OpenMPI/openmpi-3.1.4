@@ -1,0 +1,18 @@
+#%Module 1.0
+#
+# openmpi-3.1.4 
+#
+
+conflict mpi/*
+conflict rocks-openmpi
+conflict rocks-openmpi_ib
+conflict OpenMPI/*
+
+setenv			RMPI_TYPE		OPENMPI
+setenv			OMPI_MCA_btl		self,tcp
+setenv			MPI_HOME		/share/apps/OpenMPI/openmpi-3.1.4
+prepend-path 		PATH	 		/share/apps/OpenMPI/openmpi-3.1.4/bin
+prepend-path 		LD_LIBRARY_PATH 	/share/apps/OpenMPI/openmpi-3.1.4/lib
+prepend-path 		LIBRARY_PATH	 	/share/apps/OpenMPI/openmpi-3.1.4/lib
+prepend-path 		CPATH	 		/share/apps/OpenMPI/openmpi-3.1.4/include
+prepend-path		MANPATH			/share/apps/OpenMPI/openmpi-3.1.4/share/man/

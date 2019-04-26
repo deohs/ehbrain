@@ -8,8 +8,11 @@ conflict rocks-openmpi
 conflict rocks-openmpi_ib
 conflict OpenMPI/*
 
+setenv			RMPI_TYPE		OPENMPI
 setenv			OMPI_MCA_btl		self,tcp
 setenv			MPI_HOME		/share/apps/OpenMPI/openmpi-4.0.1
 prepend-path 		PATH	 		/share/apps/OpenMPI/openmpi-4.0.1/bin
 prepend-path 		LD_LIBRARY_PATH 	/share/apps/OpenMPI/openmpi-4.0.1/lib
+prepend-path 		LIBRARY_PATH	 	/share/apps/OpenMPI/openmpi-4.0.1/lib
+prepend-path 		CPATH	 		/share/apps/OpenMPI/openmpi-4.0.1/include
 prepend-path		MANPATH			/share/apps/OpenMPI/openmpi-4.0.1/share/man/

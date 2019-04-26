@@ -4,6 +4,6 @@ tar zxf openmpi-4.0.1.tar.gz
 cd openmpi-4.0.1/
 module unload rocks-openmpi
 mkdir -p /share/apps/OpenMPI
-./configure --prefix=/share/apps/OpenMPI/openmpi-4.0.1
+./configure --prefix=/share/apps/OpenMPI/openmpi-4.0.1 --disable-dlopen
 make
 make install

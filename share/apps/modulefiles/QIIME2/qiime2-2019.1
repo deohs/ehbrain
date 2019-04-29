@@ -1,0 +1,19 @@
+#%Module 1.0
+#
+# qiime2-2019.1 
+#
+proc ModulesHelp { } {
+    puts stderr "\tActivate Anaconda or Miniconda before using QIIME2"
+    puts stderr ""
+    puts stderr "\t\tmodule load Anaconda/Miniconda3-4.5.12"
+    puts stderr ""
+    puts stderr "\tActivate the QIIME2 conda environment with:"
+    puts stderr ""
+    puts stderr "\t\tsource /share/apps/Anaconda/Miniconda3-4.5.12/bin/activate /share/apps/QIIME2/qiime2-2019.1"
+    puts stderr ""
+    puts stderr "\tDeactivate FishTaco before using other Python environments:"
+    puts stderr "\t\tsource /share/apps/Anaconda/Miniconda3-4.5.12/bin/deactivate"
+    puts stderr "\t\tmodule unload QIIME2/qiime2-2019.1"
+}
+
+ModulesHelp

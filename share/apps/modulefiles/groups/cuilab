@@ -1,0 +1,8 @@
+#%Module1.0#####################################################################
+proc ModulesHelp { } {
+	puts stderr "\tThis module will add /share/groups/cuilab/apps/modulefiles "
+	puts stderr "\tto your MODULEPATH."
+}
+
+module use --append /share/groups/cuilab/apps/modulefiles 
+

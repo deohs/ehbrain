@@ -87,6 +87,29 @@ vm.dirty_background_bytes = 2147483648
 /share/apps/modulefiles
 </file>
 
+<!-- This helper script exports environment variablies into interactive sessions
+     that use SSH rather than QRSH. We switched to SSH in order to support X2Go. -->
+<file name="/etc/profile.d/sge-interactive-env.sh" owner="root.root" perms="0644">
+# https://arc.liv.ac.uk/pipermail/gridengine-users/2010-February/029106.html
+
+# Find the job ID by looking at the sge_shepherd process
+MYPARENT=`ps -p $$ -o ppid --no-header`
+MYPARENT=`ps -p $MYPARENT -o ppid --no-header`
+MYPARENT=`ps -p $MYPARENT -o ppid --no-header`
+MYSTARTUP=`ps -p $MYPARENT -o command --no-header`
+if [ "${MYSTARTUP:0:13}" = "sge_shepherd-" ]; then
+    echo -n "Entering SGE interactive session: "
+    MYJOBID=${MYSTARTUP:13}
+    MYJOBID=${MYJOBID% -bg}
+    echo "Job ${MYJOBID}"
+
+    # Source parts of the sge_shepherd's environment file and export them in to our environment
+    SGE_SPOOL=/opt/gridengine/default/spool
+    ENVFILE=${SGE_SPOOL}/$(hostname -s)/active_jobs/${MYJOBID}.1/environment
+    source &lt;(sed -n -e 's/^SGE_\|^TMPDIR/export &amp;/p' $ENVFILE)
+fi
+</file>
+
 # scratch folder
 mkdir -p /state/partition1/scratch
 chmod 1777 /state/partition1/scratch

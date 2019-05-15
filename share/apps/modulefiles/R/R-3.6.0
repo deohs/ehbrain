@@ -1,0 +1,13 @@
+#%Module 1.0
+#
+# R-3.6.0 
+#
+
+conflict Java/*
+conflict MKL/*
+
+module load Java/JDK-8.0.202
+module load MKL/mkl-2019.3
+
+prepend-path 		PATH 		/share/apps/R/R-3.6.0/bin
+prepend-path		MANPATH		/share/apps/R/R-3.6.0/share/man/

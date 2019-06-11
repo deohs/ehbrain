@@ -1,0 +1,6 @@
+cd /root/workspace/
+wget https://github.com/jgm/pandoc/releases/download/2.7.2/pandoc-2.7.2-linux.tar.gz
+tar zxf pandoc-2.7.2-linux.tar.gz
+mkdir -p /share/apps/pandoc
+mv pandoc-2.7.2 /share/apps/pandoc/
+

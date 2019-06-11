@@ -1,0 +1,18 @@
+#%Module 1.0
+#
+# mpich-3.3 
+#
+
+conflict mpi/*
+conflict rocks-openmpi
+conflict rocks-openmpi_ib
+conflict OpenMPI/*
+conflict MPICH/*
+
+setenv			RMPI_TYPE		MPICH2
+setenv			MPI_HOME		/share/apps/MPICH/mpich-3.3
+prepend-path 		PATH	 		/share/apps/MPICH/mpich-3.3/bin
+prepend-path 		LD_LIBRARY_PATH 	/share/apps/MPICH/mpich-3.3/lib
+prepend-path 		LIBRARY_PATH	 	/share/apps/MPICH/mpich-3.3/lib
+prepend-path 		CPATH	 		/share/apps/MPICH/mpich-3.3/include
+prepend-path		MANPATH			/share/apps/MPICH/mpich-3.3/share/man/

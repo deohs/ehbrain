@@ -1,0 +1,9 @@
+cd /root/workspace/
+wget http://www.mpich.org/static/downloads/3.3/mpich-3.3.tar.gz
+module purge
+tar zxf mpich-3.3.tar.gz
+cd mpich-3.3/
+mkdir -p /share/apps/MPICH
+./configure --prefix=/share/apps/MPICH/mpich-3.3
+make
+make install

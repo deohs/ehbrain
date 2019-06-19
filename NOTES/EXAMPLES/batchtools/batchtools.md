@@ -49,10 +49,10 @@ Most basically, your script will contain something like this:
     submitJobs() #note that you can input resource values here such as memory
 
 
-## Set up your environment, load R:
-
+## Load your group, Set up your environment, load R:
+    
+    newgrp mesa
     module purge
-    module load OpenMPI/openmpi-4.0.1 
     module load R/R-3.5.3 
     R
     source("myRscript.R")

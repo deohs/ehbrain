@@ -1,0 +1,14 @@
+cd /root/apps_sources/
+wget https://github.com/OSGeo/proj-datumgrid/releases/download/1.8/proj-datumgrid-1.8.tar.gz
+wget https://download.osgeo.org/proj/proj-6.2.1.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/proj-6.2.1.tar.gz
+cd proj-6.2.1/
+mkdir -p /share/apps/PROJ
+./configure --prefix=/share/apps/PROJ/proj-6.2.1
+make
+make install
+cd ../workspace/
+cd /share/apps/PROJ/proj-6.2.1/share/proj/
+tar zxf /root/apps_sources/proj-datumgrid-1.8.tar.gz
+chown root:root *

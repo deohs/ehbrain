@@ -1,0 +1,10 @@
+cd /root/apps_sources/
+wget https://github.com/OSGeo/gdal/releases/download/v3.0.2/gdal-3.0.2.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/gdal-3.0.2.tar.gz
+cd gdal-3.0.2/
+mkdir -p /share/apps/GDAL
+module load PROJ/proj-6.2.1
+./configure --prefix=/share/apps/GDAL/gdal-3.0.2
+make
+make install

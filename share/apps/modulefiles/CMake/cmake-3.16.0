@@ -1,0 +1,7 @@
+#%Module 1.0
+#
+# cmake-3.16.0 
+#
+
+prepend-path 		PATH 		/share/apps/CMake/cmake-3.16.0/bin
+prepend-path		MANPATH		/share/apps/CMake/cmake-3.16.0/man/

@@ -1,0 +1,9 @@
+cd /root/apps_sources/
+wget http://download.osgeo.org/geos/geos-3.8.0.tar.bz2
+cd ../workspace/
+tar jxf ../apps_sources/geos-3.8.0.tar.bz2
+cd geos-3.8.0/
+mkdir -p /share/apps/GEOS
+./configure --prefix=/share/apps/GEOS/geos-3.8.0
+make
+make install

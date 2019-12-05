@@ -1,0 +1,9 @@
+#%Module 1.0
+#
+#  geos-3.8.0
+#
+
+prepend-path		PATH		/share/apps/GEOS/geos-3.8.0/bin
+prepend-path 		LD_LIBRARY_PATH	/share/apps/GEOS/geos-3.8.0/lib
+prepend-path 		LIBRARY_PATH	/share/apps/GEOS/geos-3.8.0/lib
+prepend-path 		CPATH		/share/apps/GEOS/geos-3.8.0/include

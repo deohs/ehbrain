@@ -1,0 +1,9 @@
+cd /root/apps_sources/
+wget http://downloads.dlang.org/releases/2.x/2.089.0/dmd.2.089.0.linux.tar.xz
+mkdir -p /share/apps/DMD/
+unxz dmd.2.089.0.linux.tar.xz
+cd ../workspace/
+tar xf ../apps_sources/dmd.2.089.0.linux.tar
+mv dmd2/ /share/apps/DMD/dmd-2.098.0
+cd /share/apps/DMD/
+chown -R root:root dmd-2.098.0/

@@ -1,0 +1,8 @@
+#%Module 1.0
+#
+#  dmd-2.098.0
+#
+prepend-path		PATH		/share/apps/DMD/dmd-2.098.0/linux/bin64
+prepend-path 		LD_LIBRARY_PATH	/share/apps/DMD/dmd-2.098.0/linux/lib64
+prepend-path 		LIBRARY_PATH	/share/apps/DMD/dmd-2.098.0/linux/lib64
+prepend-path 		MANPATH		/share/apps/DMD/dmd-2.098.0/man

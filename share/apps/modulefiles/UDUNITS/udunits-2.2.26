@@ -1,0 +1,9 @@
+#%Module 1.0
+#
+#  udunits-2.2.26
+#
+
+prepend-path		PATH		/share/apps/UDUNITS/udunits-2.2.26/bin
+prepend-path 		LD_LIBRARY_PATH	/share/apps/UDUNITS/udunits-2.2.26/lib
+prepend-path 		LIBRARY_PATH	/share/apps/UDUNITS/udunits-2.2.26/lib
+prepend-path 		CPATH		/share/apps/UDUNITS/udunits-2.2.26/include

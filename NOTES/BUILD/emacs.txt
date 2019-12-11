@@ -1,0 +1,10 @@
+cd /root/apps_sources/
+wget http://ftp.gnu.org/gnu/emacs/emacs-26.3.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/emacs-26.3.tar.gz
+cd emacs-26.3/
+mkdir -p /share/apps/Emacs
+yum install gnutls-devel libXaw-devel
+./configure --prefix=/share/apps/Emacs/emacs-26.3 --with-xpm=no --with-gif=no --with-tiff=no --with-x-toolkit=athena
+make
+make install

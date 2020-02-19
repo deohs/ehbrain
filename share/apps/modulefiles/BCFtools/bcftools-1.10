@@ -1,0 +1,6 @@
+#%Module 1.0
+#
+# bcftools-1.10 
+#
+prepend-path 		PATH 		/share/apps/BCFtools/bcftools-1.10/bin
+prepend-path		MANPATH		/share/apps/BCFtools/bcftools-1.10/share/man/

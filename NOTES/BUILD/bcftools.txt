@@ -1,0 +1,9 @@
+cd /root/apps_sources/
+wget https://github.com/samtools/bcftools/releases/download/1.10.2/bcftools-1.10.2.tar.bz2
+cd /root/workspace/
+tar jxf ../apps_sources/bcftools-1.10.2.tar.bz2
+cd bcftools-1.10.2/
+mkdir -p /share/apps/BCFtools
+./configure --prefix=/share/apps/BCFtools/bcftools-1.10
+make
+make install

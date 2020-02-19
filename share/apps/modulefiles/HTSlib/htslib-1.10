@@ -1,0 +1,6 @@
+#%Module 1.0
+#
+# htslib-1.10 
+#
+prepend-path 		PATH 		/share/apps/HTSlib/htslib-1.10/bin
+prepend-path		MANPATH		/share/apps/HTSlib/htslib-1.10/share/man/

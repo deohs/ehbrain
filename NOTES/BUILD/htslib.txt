@@ -1,0 +1,9 @@
+cd /root/apps_sources/
+wget https://github.com/samtools/htslib/releases/download/1.10.2/htslib-1.10.2.tar.bz2
+cd ../workspace/
+tar jxf ../apps_sources/htslib-1.10.2.tar.bz2
+cd htslib-1.10.2/
+mkdir -p /share/apps/HTSlib
+./configure --prefix=/share/apps/HTSlib/htslib-1.10
+make
+make install

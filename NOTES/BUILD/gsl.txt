@@ -1,0 +1,9 @@
+/root/apps_sources/
+wget ftp://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/gsl-2.6.tar.gz
+cd gsl-2.6/
+mkdir -p /share/apps/GSL/
+./configure --prefix=/share/apps/GSL/gsl-2.6
+make
+make install

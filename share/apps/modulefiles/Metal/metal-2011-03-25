@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# metal-2011-03-25 
+#
+prepend-path 		PATH 		/share/apps/Metal/metal-2011-03-25

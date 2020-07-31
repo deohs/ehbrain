@@ -1,0 +1,7 @@
+cd apps_sources/
+wget http://csg.sph.umich.edu/abecasis/Metal/download/Linux-metal.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/Linux-metal.tar.gz 
+mkdir -p /share/apps/Metal
+mv generic-metal /share/apps/Metal/metal-2011-03-25
+chown -R root:root /share/apps/Metal/metal-2011-03-25

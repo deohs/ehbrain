@@ -1,6 +1,7 @@
 
 default.resources = list(queue="mesa.q", group="mesa",ncpus=1,blas.threads=1,
-	      Rversion=paste0(R.Version()$major,".",R.Version()$minor))
+	      Rversion=paste0(R.Version()$major,".",R.Version()$minor),
+	      mem="7.8G")
 
 #by default, give a SGE task 1 cores and tells the math library mkl to use 1 threads.
 #depending on your application, it may be better to switch this to ncpus=2, blas.threads=2. 

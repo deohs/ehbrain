@@ -65,3 +65,19 @@ If you need to delete a range of tasks in SGE you can do `qdel{x..y}`.
 
 If you want to rerun your script from scratch you'll need to delete your registry
 `rm registry -r`
+
+
+## Memory
+
+The provided template files cap the memory usage of a job to the approximate number of gigs of ram per core on the mesa.q nodes (the latest nodes have the same number of memory with more cores so with setting some processores on those nodes won't be used).
+
+If your processes use more than ~7.8G of memory each, you can specifically request more memory via:
+     
+     submitJobs(resources=list(mem="20G"))
+
+for example. This requests 20G of memory per job. If the memory is not available, the job will sit in the queue until that much memory becomes available on any node.
+
+Note that if a job exceeds the value of virtual_free (specified via mem passed to sge.tmpl), then the job will likely be killed by sge.tmpl although I haven't tested this specifically. 
+
+     
+

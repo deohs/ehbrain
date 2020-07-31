@@ -19,6 +19,7 @@ me of the job, can be anything, simply used when displaying the list of running 
 
 ##for each sge submission request <ncpus> virtual cores
 #$ -pe smp <%= resources$ncpus %>
+#$ -l virtual_free=<%= resources$mem %>
 
 
 <%= paste0("newgrp ", resources$group) %>

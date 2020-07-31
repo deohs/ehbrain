@@ -24,7 +24,7 @@ me of the job, can be anything, simply used when displaying the list of running 
 <%= paste0("newgrp ", resources$group) %>
 module purge
 module load OpenMPI/openmpi-4.0.1 
-module load R/R-3.5.3 
+<%= paste0("module load R/R-", resources$Rversion) %>
 
 export DEBUGME=<%= Sys.getenv("DEBUGME") %>
 

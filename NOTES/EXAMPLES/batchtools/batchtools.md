@@ -43,10 +43,10 @@ Most basically, your script will contain something like this:
     f <- function(arg,setting){Sys.sleep(30);TRUE}
     batchMap(fun=f, arg=1:10,more.args=list(setting=1)) #arguments provided to ... will be exucted as seperate calls, parallel. more.args are arguments  that are constant across all function calls.
     submitJobs()
-    waitforJobs()
+    waitForJobs()
+    reduceResultsList()
     
     
-    submitJobs() #note that you can input resource values here such as memory
 
 
 ## Load your group, Set up your environment, load R:

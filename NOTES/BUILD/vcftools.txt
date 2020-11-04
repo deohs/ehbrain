@@ -1,0 +1,9 @@
+cd apps_sources/
+wget https://github.com/vcftools/vcftools/releases/download/v0.1.16/vcftools-0.1.16.tar.gz
+cd /root/workspace/
+tar zxf ../apps_sources/vcftools-0.1.16.tar.gz 
+cd vcftools-0.1.16/
+mkdir -p /share/apps/VCFtools
+./configure --prefix=/share/apps/VCFtools/vcftools-0.1.16
+make
+make install

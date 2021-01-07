@@ -1,0 +1,9 @@
+cd apps_sources/
+wget https://core.tcl-lang.org/tcllib/uv/tcllib-1.20.tar.gz
+cd ../workspace/
+tar zxf /root/apps_sources/tcllib-1.20.tar.gz 
+cd tcllib-1.20/
+mkdir -p /share/apps/Tcl
+./configure --prefix=/share/apps/Tcl/tcllib-1.20
+ make
+make install

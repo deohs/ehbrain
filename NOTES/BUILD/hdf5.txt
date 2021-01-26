@@ -1,0 +1,10 @@
+cd /root/apps_sources/
+wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.8/hdf5-1.8.21/src/hdf5-1.8.21.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/hdf5-1.8.21.tar.gz 
+cd hdf5-1.8.21/
+mkdir -p /share/apps/HDF5
+./configure --prefix=/share/apps/HDF5/hdf5-1.8.21
+make
+make install
+

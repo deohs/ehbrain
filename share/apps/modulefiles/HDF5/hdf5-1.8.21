@@ -1,0 +1,9 @@
+#%Module 1.0
+#
+# hdf5-1.8.21 
+#
+prepend-path		PATH		/share/apps/HDF5/hdf5-1.8.21/bin
+prepend-path 		LD_LIBRARY_PATH	/share/apps/HDF5/hdf5-1.8.21/lib
+prepend-path 		LIBRARY_PATH	/share/apps/HDF5/hdf5-1.8.21/lib
+prepend-path 		CPATH		/share/apps/HDF5/hdf5-1.8.21/include
+prepend-path 		MANPATH		/share/apps/HDF5/hdf5-1.8.21/share/man

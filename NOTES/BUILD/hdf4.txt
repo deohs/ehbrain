@@ -1,0 +1,10 @@
+cd apps_sources/
+wget https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.15/src/hdf-4.2.15.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/hdf-4.2.15.tar.gz 
+cd hdf-4.2.15/
+mkdir -p /share/apps/HDF4
+yum install flex
+./configure --prefix=/share/apps/HDF4/hdf-4.2.15 --enable-shared --disable-fortran
+make
+make install

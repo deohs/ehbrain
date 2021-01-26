@@ -1,0 +1,9 @@
+#%Module 1.0
+#
+# hdf-4.2.15 
+#
+prepend-path		PATH		/share/apps/HDF4/hdf-4.2.15/bin
+prepend-path 		LD_LIBRARY_PATH	/share/apps/HDF4/hdf-4.2.15/lib
+prepend-path 		LIBRARY_PATH	/share/apps/HDF4/hdf-4.2.15/lib
+prepend-path 		CPATH		/share/apps/HDF4/hdf-4.2.15/include
+prepend-path 		MANPATH		/share/apps/HDF4/hdf-4.2.15/share/man

@@ -1,0 +1,7 @@
+cd /root/apps_sources/
+wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64
+cd /share/apps/
+mkdir -p jq/jq-1.6/bin
+cd jq/jq-1.6/bin/
+cp /root/apps_sources/jq-linux64 jq
+chmod 755 jq 

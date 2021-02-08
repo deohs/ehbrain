@@ -1,0 +1,9 @@
+cd apps_sources/
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.14.0/protobuf-cpp-3.14.0.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/protobuf-cpp-3.14.0.tar.gz 
+cd protobuf-3.14.0/
+mkdir /share/apps/protobuf
+./configure --prefix=/share/apps/protobuf/protobuf-3.14.0
+make
+make install

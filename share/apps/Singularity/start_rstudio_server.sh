@@ -47,6 +47,9 @@ INSTRUCTIONS="
 The following SSH commands should be run from your computer. If you are using PuTTY, you will need to adapt the settings.
 
     ssh -L 2022:brain.deohs.washington.edu:22 ${USER}@vector.deohs.washington.edu
+
+Then in a separate terminal, run:
+
     ssh -p 2022 -L ${RAND_PORT}:${HOSTNAME}:${RAND_PORT} ${USER}@localhost
 
 Once the SSH tunnel is setup, use a browser to visit http://localhost:${RAND_PORT}/, and login with ${USER} / ${RS_CONTAINER_PASSWD}

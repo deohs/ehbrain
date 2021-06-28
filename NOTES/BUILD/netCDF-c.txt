@@ -1,0 +1,10 @@
+cd apps_sources/
+wget https://www.unidata.ucar.edu/downloads/netcdf/ftp/netcdf-c-4.8.0.tar.gz
+cd ../workspace/
+mkdir -p /share/apps/netCDF
+tar zxf ../apps_sources/netcdf-c-4.8.0.tar.gz 
+cd netcdf-c-4.8.0/
+module load HDF5/hdf5-1.8.21 
+./configure --prefix=/share/apps/netCDF/netCDF-c-4.8.0
+make
+make install

@@ -1,0 +1,5 @@
+#%Module 1.0
+#
+# STAR-2.7.9a
+#
+prepend-path 		PATH 		/share/apps/STAR/STAR-2.7.9a/bin

@@ -1,0 +1,10 @@
+cd apps_sources/
+wget https://github.com/alexdobin/STAR/archive/refs/tags/2.7.9a.tar.gz
+cd ../workspace/
+tar zxf ../apps_sources/2.7.9a.tar.gz
+cd STAR-2.7.9a/
+mkdir -p /share/apps/STAR/STAR-2.7.9a
+mkdir /share/apps/STAR/STAR-2.7.9a/bin
+cp bin/Linux_x86_64_static/* /share/apps/STAR/STAR-2.7.9a/bin/
+cp -R doc /share/apps/STAR/STAR-2.7.9a/
+cp -R docs /share/apps/STAR/STAR-2.7.9a/

@@ -1,0 +1,8 @@
+mkdir -p /share/apps/MAESTRO
+/share/apps/Anaconda/Miniconda3-4.8.3/bin/conda create --prefix /share/apps/MAESTRO/maestro-1.5.1
+source /share/apps/Anaconda/Miniconda3-4.8.3/bin/activate /share/apps/MAESTRO/maestro-1.5.1
+conda config --add channels defaults
+conda config --add channels liulab-dfci
+conda config --add channels bioconda
+conda config --add channels conda-forge
+conda install maestro=1.5.1 -c liulab-dfci

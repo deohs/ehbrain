@@ -1,0 +1,19 @@
+#%Module 1.0
+#
+# maestro-1.5.1 
+#
+proc ModulesHelp { } {
+    puts stderr "\tActivate Anaconda or Miniconda before using MAESTRO"
+    puts stderr ""
+    puts stderr "\t\tmodule load Anaconda/Miniconda3-4.8.3"
+    puts stderr ""
+    puts stderr "\tActivate the MAESTRO conda environment with:"
+    puts stderr ""
+    puts stderr "\t\tsource activate /share/apps/MAESTRO/maestro-1.5.1"
+    puts stderr ""
+    puts stderr "\tDeactivate MAESTRO before using other Python environments:"
+    puts stderr "\t\tsource deactivate"
+    puts stderr "\t\tmodule unload MAESTRO/maestro-1.5.1"
+}
+
+ModulesHelp

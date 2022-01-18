@@ -1,0 +1,4 @@
+mkdir /share/apps/QIIME1
+/share/apps/Anaconda/Miniconda3-4.8.3/bin/conda create --prefix /share/apps/QIIME1/qiime1.9.1
+source /share/apps/Anaconda/Miniconda3-4.8.3/bin/activate /share/apps/QIIME1/qiime1.9.1
+conda install python=2.7 qiime matplotlib mock nose -c bioconda

@@ -22,9 +22,10 @@ mkdir -p ${RS_CONTAINER_R_LIBS_USER}
 
 # Create session specific temporary directories
 mkdir -p ${TMPDIR}/{tmp,var/lib/rstudio-server,var/run/rstudio-server,home/rstudio}
+chmod 770 ${TMPDIR}
 
 # Configure rstudio to use persistent library path
-echo "Sys.setenv(R_LIBS_USER='${RS_CONTAINER_R_LIBS_USER}')" >> ${TMPDIR}/home/rstudio/.Rprofile
+echo "Sys.setenv(R_LIBS_USER='${RS_CONTAINER_R_LIBS_USER}')" > ${TMPDIR}/home/rstudio/.Rprofile
 
 # System JAVA_HOME path should not override container path
 echo "Sys.unsetenv('JAVA_HOME')" >> ${TMPDIR}/home/rstudio/.Rprofile

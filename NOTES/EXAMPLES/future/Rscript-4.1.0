@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+## Load the 'R' module
+newgrp mesa << EOF
+module load R/R-4.1.0
+
+## Call Rscript and pass all arguments as-is
+Rscript $(printf " %q" "${@}")
+EOF

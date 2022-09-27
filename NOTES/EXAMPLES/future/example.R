@@ -24,7 +24,8 @@ x %<-% {
                                 top.host = thost, top.pid = tpid,
                                 mid.host = mhost, mid.pid = mpid,
                                 host = Sys.info()[["nodename"]],
-                                pid = Sys.getpid())
+                                pid = Sys.getpid(),
+                                r.version = getRversion())
       }
       Reduce(rbind, z)
     }

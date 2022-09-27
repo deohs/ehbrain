@@ -24,7 +24,7 @@ For example:
 ## Setup
 
 1. Because Brain requires that you set a group and load R from a module each time you log in before using R,
-we need to set up an alternative `Rscript` command that does all of this automatically. This directory contains an example script called `Rscript-4.1.0` that sets the group to `mesa` and calls `module load R/R-4.1.0`. Put this script in the directory `~/bin/` directory on Brain, which lets you call it as a standalone command. Don't forget to make it executable with `chmod +x ~/bin/Rscript-4.1.0`! 
+we need to set up an alternative `Rscript` command that does all of this automatically. This directory contains an example script called `Rscript-4.1.0` that sets the group to `mesa` and calls `module load R/R-4.1.0`. Create the directory `~/bin` on Brain if it doesn't exist, then save the script there. This special location lets you call it as a standalone command. Don't forget to make it executable with `chmod +x ~/bin/Rscript-4.1.0`! 
   
     E.g. 
     
@@ -40,8 +40,9 @@ we need to set up an alternative `Rscript` command that does all of this automat
 3. Install `future` and `future.batchtools` onto *both* Brain and your "local" server (e.g. vector, plasmid). This is a good opportunity to test your new `Rscript` on Brain. If you want to run the example code in this directory, you should also install `listenv`. E.g. 
 
     ```
-    [loganap@deohs-brain ~]$ Rscript-4.1.0 -e 'install.packages(c("future", "future.batchtools", "listenv"), dependencies =     TRUE, repos="http://cran.us.r-project.org")'
+    [loganap@deohs-brain ~]$ Rscript-4.1.0 -e 'install.packages(c("future", "future.batchtools", "listenv"), dependencies = TRUE, repos = "http://cran.us.r-project.org", lib = Sys.getenv("R_LIBS_USER"))'
     ```
+    
 4. [Optional] You may find this more seamless if you set up an SSH key to allow password-free SSH connections between your local server and Brain. See steps 1-3 [here](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server). 
 
 ## Run a Future on the Cluster

@@ -73,4 +73,4 @@ See the [Future Docs](https://future.futureverse.org/#controlling-how-futures-ar
 
 ## Alternative APIs
 
-As mentioned above, some other packages have been extended to use Future as a back-end. There are examples using `purrr` and base `apply` in this directory. In general, this just requires running the `plan` code above, then replacing your usual `purrr` or `*apply` functions with their "Future" versions. E.g. `purrr::map` becomes `furrr:future_map`, and `lapply` becomes `future.apply::future_lapply`. 
+As mentioned above, some other packages have been extended to use Future as a back-end. There are examples using `purrr` (`purrr_example.R`) and base `apply` (`apply_example.R`) in this directory. In general, this just requires running the `plan` code above, then replacing your usual `purrr` or `*apply` functions with their "Future" versions. E.g. `purrr::map` becomes `furrr:future_map`, and `lapply` becomes `future.apply::future_lapply`. 

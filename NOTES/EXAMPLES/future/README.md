@@ -35,7 +35,7 @@ we need to set up an alternative `Rscript` command that does all of this automat
     
     If you get `bash: Rscript-4.1.0: command not found...` or similar, you may need to [add `~/bin` to your $PATH](https://askubuntu.com/questions/402353/how-to-add-home-username-bin-to-path).
   
-2. Also copy `sge.tmpl` and `.batchtools.conf.R` into your home directory on Brain. If you don't see `.batchtools.conf.R` in this folder, it's there! It's just a hidden file (because it starts with `.`). If you are not in the `mesa` group, you will need to edit `.batchtools.conf.R` to identify the correct group and queue. You may already have copies of these files in your home directory on Brain. Unless you have done something non-standard with them, it should be safe to replace these files.  
+2. Also copy `sge.tmpl` and `.batchtools.conf.R` into your home directory on Brain. If you don't see `.batchtools.conf.R` in this folder, it's there! It's just a hidden file (because it starts with `.`). If you are not in the `mesa` group, you will need to edit `.batchtools.conf.R` to identify the correct group and queue. You may already have copies of these files in your home directory on Brain. Unless you have done something non-standard with them (in which case, you probably know what you're doing), it should be safe to replace these files.  
 
 3. Install `future` and `future.batchtools` onto *both* Brain and your "local" server (e.g. vector, plasmid). This is a good opportunity to test your new `Rscript` on Brain. If you want to run the example code in this directory, you should also install `listenv`. E.g. 
 

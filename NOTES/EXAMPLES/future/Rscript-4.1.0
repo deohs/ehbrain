@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+## Load the 'R' module
+newgrp mesa << EOF
+# Load relevant R Version
+module load R/R-4.1.0
+
+# Load modules used by SF
+module load UDUNITS/udunits-2.2.26
+module load GDAL/gdal-3.0.2 
+module load GEOS/geos-3.8.0
+module load PROJ/proj-6.2.1
+
+## Call Rscript and pass all arguments as-is
+Rscript $(printf " %q" "${@}")
+EOF

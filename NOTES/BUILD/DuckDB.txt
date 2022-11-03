@@ -1,0 +1,9 @@
+cd apps_sources/
+wget https://github.com/duckdb/duckdb/releases/download/v0.5.1/duckdb_odbc-linux-amd64.zip
+cd ../workspace/
+unzip ../apps_sources/duckdb_odbc-linux-amd64.zip
+more unixodbc_setup.sh
+mkdir /share/apps/DuckDB
+mkdir /share/apps/DuckDB/DuckDB-0.5.1
+mv libduckdb_odbc.so /share/apps/DuckDB/DuckDB-0.5.1/
+mv unixodbc_setup.sh /share/apps/DuckDB/DuckDB-0.5.1/

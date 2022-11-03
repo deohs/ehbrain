@@ -1,0 +1,10 @@
+#%Module 1.0
+#
+# unixODBC-2.3.11 
+#
+prepend-path		PATH		/share/apps/unixODBC/unixODBC-2.3.11/bin
+prepend-path 		LD_LIBRARY_PATH	/share/apps/unixODBC/unixODBC-2.3.11/lib
+prepend-path 		LIBRARY_PATH	/share/apps/unixODBC/unixODBC-2.3.11/lib
+prepend-path 		CPATH		/share/apps/unixODBC/unixODBC-2.3.11/include
+prepend-path 		PKG_CONFIG_PATH	/share/apps/unixODBC/unixODBC-2.3.11/lib/pkgconfig
+prepend-path 		MANPATH		/share/apps/unixODBC/unixODBC-2.3.11/share/man

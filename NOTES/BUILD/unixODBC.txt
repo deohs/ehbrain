@@ -1,0 +1,9 @@
+cd apps_sources/
+wget http://www.unixodbc.org/unixODBC-2.3.11.tar.gz
+cd ../workspace/
+tar zxf /root/apps_sources/unixODBC-2.3.11.tar.gz
+cd unixODBC-2.3.11/
+mkdir /share/apps/unixODBC/
+./configure --prefix=/share/apps/unixODBC/unixODBC-2.3.11
+make
+make install
